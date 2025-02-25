@@ -7,15 +7,24 @@ export default {
   theme: {
     extend: {
       colors:{
-        "border1":"#F0F0F0"
+        "border1":"#F0F0F0",
+        "border2":"#F0F0F0",
+        "brand_color":"#F84D42",
+        "title":"#343434",
+        "title2":"#727272"
       },
       fontSize:{
-            "heading":"30px"
+            "heading1":"40px",
+            "heading":"30px",
       },
       fontFamily: {
        "poppins":["Poppins","serif"],
        "roboto":["Roboto","sans-serif"],
        "jost":["Jost","sans-serif"],
+       "baji":["Bai Jamjuree","serif"]
+      },
+      boxShadow:{
+        "shadow1":"3px 3px 6px 0 #00000014"
       },
       // -------------------animation-------------------
       animation: {
@@ -24,8 +33,51 @@ export default {
         'move-slowly': 'move-slowly 10s infinite',
         'cloud-left': 'cloud-left 3s forwards',
         'cloud-right': 'cloud-right 3s forwards',
+        'up-down': 'upDown 2s infinite ease-in-out',
+        'side-to-side': 'sideToSide 3s infinite ease-in-out',
+        'rotate': 'rotate 5s linear infinite',
+        'diagonal': 'diagonal 4s infinite ease-in-out',
+        'bounce-custom': 'bounce-custom 1s infinite',
+        'shake': 'shake 0.7s ease-in-out infinite',
+        zoom: 'zoom 2s ease-in-out infinite',
+        scaleLoop: "scaleLoop 3s infinite ease-in-out",
       },
       keyframes: {
+        scaleLoop: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
+        zoom: {
+          '0%, 100%': { transform: 'scale(1)' },
+          '50%': { transform: 'scale(1.1)' },
+        },
+        shake: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-2px)' },
+          '50%': { transform: 'translateX(2px)' },
+          '75%': { transform: 'translateX(-2px)' },
+        },
+        upDown: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-20px)' },
+        },
+        'bounce-custom': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-6px)' },
+        },
+        sideToSide: {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(20px)' },
+        },
+        rotate: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        diagonal: {
+          '0%': { transform: 'translate(0, 0)' },
+          '50%': { transform: 'translate(20px, 20px)' },
+          '100%': { transform: 'translate(0, 0)' },
+        },
         'slide-in': {
           '0%': {
             transform: 'translateX(100%)', // Start off-screen to the right

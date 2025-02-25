@@ -9,24 +9,24 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 const Homeproduct = () => {
     const [activeTab, setActiveTab] = useState('FEATURED');
     const products = [
-        { id: 1, image: "https://htmlbeans.com/html/schon/images/products/img01.jpg", title: "Puff Chair", price: "€ 287,00", rating: 4.5 },
-        { id: 2, image: "https://htmlbeans.com/html/schon/images/products/img02.jpg", title: "Lounge Chair", price: "€ 150,00", rating: 4 },
-        { id: 3, image: "https://htmlbeans.com/html/schon/images/products/img03.jpg", title: "Modern Sofa", price: "€ 399,00", rating: 5 },
-        { id: 4, image: "https://htmlbeans.com/html/schon/images/products/img04.jpg", title: "Luxury Bed", price: "€ 549,00", rating: 4.5 },
-        { id: 5, image: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Coffee Table", price: "€ 120,00", rating: 4 },
-        { id: 6, image: "https://htmlbeans.com/html/schon/images/products/img06.jpg", title: "Office Desk", price: "€ 250,00", rating: 3.5 },
-        { id: 7, image: "https://htmlbeans.com/html/schon/images/products/img07.jpg", title: "Armchair", price: "€ 180,00", rating: 4 },
-        { id: 8, image: "https://htmlbeans.com/html/schon/images/products/img08.jpg", title: "Dining Set", price: "€ 700,00", rating: 5 },
-        { id: 9, image: "https://htmlbeans.com/html/schon/images/products/img09.jpg", title: "TV Unit", price: "€ 450,00", rating: 4 },
-        { id: 10, image: "https://htmlbeans.com/html/schon/images/products/img10.jpg", title: "Bookshelf", price: "€ 130,00", rating: 4.5 },
-        { id: 4, image: "https://htmlbeans.com/html/schon/images/products/img04.jpg", title: "Luxury Bed", price: "€ 549,00", rating: 4.5 },
-        { id: 5, image: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Coffee Table", price: "€ 120,00", rating: 4 },
-        { id: 6, image: "https://htmlbeans.com/html/schon/images/products/img06.jpg", title: "Office Desk", price: "€ 250,00", rating: 3.5 },
-        { id: 7, image: "https://htmlbeans.com/html/schon/images/products/img07.jpg", title: "Armchair", price: "€ 180,00", rating: 4 },
-        { id: 8, image: "https://htmlbeans.com/html/schon/images/products/img08.jpg", title: "Dining Set", price: "€ 700,00", rating: 5 },
-        { id: 9, image: "https://htmlbeans.com/html/schon/images/products/img09.jpg", title: "TV Unit", price: "€ 450,00", rating: 4 },
-        { id: 10, image: "https://htmlbeans.com/html/schon/images/products/img10.jpg", title: "Bookshelf", price: "€ 130,00", rating: 4.5 },
-        { id: 10, image: "https://htmlbeans.com/html/schon/images/products/img10.jpg", title: "Bookshelf", price: "€ 130,00", rating: 4.5 },
+        { id: 1, image: "https://htmlbeans.com/html/schon/images/products/img01.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Puff Chair", price: "€ 287,00", rating: 4.5 },
+        { id: 2, image: "https://htmlbeans.com/html/schon/images/products/img02.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Lounge Chair", price: "€ 150,00", rating: 4 },
+        { id: 3, image: "https://htmlbeans.com/html/schon/images/products/img03.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Modern Sofa", price: "€ 399,00", rating: 5 },
+        { id: 4, image: "https://htmlbeans.com/html/schon/images/products/img04.jpg",  image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg",title: "Luxury Bed", price: "€ 549,00", rating: 4.5 },
+        { id: 5, image: "https://htmlbeans.com/html/schon/images/products/img05.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Coffee Table", price: "€ 120,00", rating: 4 },
+        { id: 6, image: "https://htmlbeans.com/html/schon/images/products/img06.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Office Desk", price: "€ 250,00", rating: 3.5 },
+        { id: 7, image: "https://htmlbeans.com/html/schon/images/products/img07.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Armchair", price: "€ 180,00", rating: 4 },
+        { id: 8, image: "https://htmlbeans.com/html/schon/images/products/img08.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Dining Set", price: "€ 700,00", rating: 5 },
+        { id: 9, image: "https://htmlbeans.com/html/schon/images/products/img09.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "TV Unit", price: "€ 450,00", rating: 4 },
+        { id: 10, image: "https://htmlbeans.com/html/schon/images/products/img10.jpg",  image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg",title: "Bookshelf", price: "€ 130,00", rating: 4.5 },
+        { id: 4, image: "https://htmlbeans.com/html/schon/images/products/img04.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Luxury Bed", price: "€ 549,00", rating: 4.5 },
+        { id: 5, image: "https://htmlbeans.com/html/schon/images/products/img05.jpg",  image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg",title: "Coffee Table", price: "€ 120,00", rating: 4 },
+        { id: 6, image: "https://htmlbeans.com/html/schon/images/products/img06.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Office Desk", price: "€ 250,00", rating: 3.5 },
+        { id: 7, image: "https://htmlbeans.com/html/schon/images/products/img07.jpg",  image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg",title: "Armchair", price: "€ 180,00", rating: 4 },
+        { id: 8, image: "https://htmlbeans.com/html/schon/images/products/img08.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Dining Set", price: "€ 700,00", rating: 5 },
+        { id: 9, image: "https://htmlbeans.com/html/schon/images/products/img09.jpg",  image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg",title: "TV Unit", price: "€ 450,00", rating: 4 },
+        { id: 10, image: "https://htmlbeans.com/html/schon/images/products/img10.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Bookshelf", price: "€ 130,00", rating: 4.5 },
+        { id: 10, image: "https://htmlbeans.com/html/schon/images/products/img10.jpg",  image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg",title: "Bookshelf", price: "€ 130,00", rating: 4.5 },
       
     ];
     const products2 = [
@@ -45,10 +45,10 @@ const Homeproduct = () => {
       
     ];
     const products3 = [
-      { id: 5, image: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Coffee Table", price: "€ 120,00", rating: 4 },
-        { id: 6, image: "https://htmlbeans.com/html/schon/images/products/img06.jpg", title: "Office Desk", price: "€ 250,00", rating: 3.5 },
-        { id: 7, image: "https://htmlbeans.com/html/schon/images/products/img07.jpg", title: "Armchair", price: "€ 180,00", rating: 4 },
-        { id: 8, image: "https://htmlbeans.com/html/schon/images/products/img08.jpg", title: "Dining Set", price: "€ 700,00", rating: 5 },
+      { id: 5, image: "https://htmlbeans.com/html/schon/images/products/img05.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Coffee Table", price: "€ 120,00", rating: 4 },
+        { id: 6, image: "https://htmlbeans.com/html/schon/images/products/img06.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Office Desk", price: "€ 250,00", rating: 3.5 },
+        { id: 7, image: "https://htmlbeans.com/html/schon/images/products/img07.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Armchair", price: "€ 180,00", rating: 4 },
+        { id: 8, image: "https://htmlbeans.com/html/schon/images/products/img08.jpg", image2: "https://htmlbeans.com/html/schon/images/products/img05.jpg", title: "Dining Set", price: "€ 700,00", rating: 5 },
         { id: 9, image: "https://htmlbeans.com/html/schon/images/products/img09.jpg", title: "TV Unit", price: "€ 450,00", rating: 4 },
         { id: 10, image: "https://htmlbeans.com/html/schon/images/products/img10.jpg", title: "Bookshelf", price: "€ 130,00", rating: 4.5 },
         { id: 4, image: "https://htmlbeans.com/html/schon/images/products/img04.jpg", title: "Luxury Bed", price: "€ 549,00", rating: 4.5 },
@@ -115,7 +115,12 @@ const Homeproduct = () => {
                          <img
                             src={data.image}
                             alt=""
-                            className="transition-transform duration-500 ease-in-out transform group-hover:translate-x-[20%]"
+                            className="transition-transform group-hover:hidden duration-500 ease-in-out transform group-hover:translate-x-[20%]"
+                          />
+                            <img
+                            src={data.image2}
+                            alt=""
+                            className="transition-transform duration-500 hidden group-hover:block ease-in-out transform group-hover:translate-x-[20%]"
                           />
                          </div>
                           {/* --------------box-------------- */}
